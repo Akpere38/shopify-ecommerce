@@ -1,0 +1,51 @@
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition:
+    box-shadow var(--transition-base),
+    transform  var(--transition-base);
+}
+
+/* ── Accent top border ───────────────────────────────────────── */
+.accent {
+  border-top: 3px solid var(--color-gold-bright);
+}
+
+/* ── Hoverable ───────────────────────────────────────────────── */
+.hoverable:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* ── Padding ─────────────────────────────────────────────────── */
+.pad-none { padding: 0; }
+.pad-sm   { padding: var(--space-4); }
+.pad-md   { padding: var(--space-6); }
+.pad-lg   { padding: var(--space-8); }
+
+/* ── Sub-components ──────────────────────────────────────────── */
+.header {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.body {
+  padding: var(--space-6);
+}
+
+.footer {
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}

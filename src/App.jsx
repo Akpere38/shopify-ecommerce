@@ -7,7 +7,7 @@ import AppRoutes from '@/routes/AppRoutes'
 
 export default function App() {
   return (
-    <BrowserRouter>
+        <BrowserRouter>
       <AuthProvider>
         <StoreProvider>
           <CartProvider>
@@ -29,6 +29,6 @@ export default function App() {
           </CartProvider>
         </StoreProvider>
       </AuthProvider>
-    </BrowserRouter>
+      </BrowserRouter>
   )
 }

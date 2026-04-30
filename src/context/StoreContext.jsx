@@ -2,6 +2,8 @@ import { createContext, useContext, useState, useCallback } from 'react'
 import storesApi from '@/api/stores'
 import toast from 'react-hot-toast'
 
+
+
 const StoreContext = createContext(null)
 
 export function StoreProvider({ children }) {
@@ -10,19 +12,16 @@ export function StoreProvider({ children }) {
   const [isLoading,   setIsLoading]   = useState(false)
 
   /* ── Fetch all stores owned by the current user ────────────── */
-  const fetchStores = useCallback(async () => {
-    setIsLoading(true)
-    try {
-      const data = await storesApi.getMyStores()
-      setStores(data)
-      return data
-    } catch (err) {
-      toast.error('Could not load your stores.')
-      throw err
-    } finally {
-      setIsLoading(false)
-    }
-  }, [])
+ const fetchStores = useCallback(async () => {
+  setIsLoading(true);
+  try {
+    const data = await storesApi.getMyStores();
+    setStores(data);
+    return data;
+  } finally {
+    setIsLoading(false);
+  }
+}, []);
 
   /* ── Load a single store as the active one ─────────────────── */
   const loadActiveStore = useCallback(async (storeId) => {
@@ -45,11 +44,13 @@ export function StoreProvider({ children }) {
 
   /* ── CRUD ───────────────────────────────────────────────────── */
   const createStore = useCallback(async (formData) => {
-    const newStore = await storesApi.createStore(formData)
-    setStores((prev) => [...prev, newStore])
-    toast.success('Store created!')
-    return newStore
-  }, [])
+  const newStore = await storesApi.createStore(formData);
+
+  setStores((prev) => [...prev, newStore]);
+  setActiveStore(newStore);
+
+  return newStore;
+}, []);
 
   const updateStore = useCallback(async (storeId, formData) => {
     const updated = await storesApi.updateStore(storeId, formData)

@@ -1,0 +1,66 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+/* ── Sizes ───────────────────────────────────────────────────── */
+.sm { font-size: 11px; padding: 2px 8px; }
+.md { font-size: 12px; padding: 3px 10px; }
+
+/* ── Variants ────────────────────────────────────────────────── */
+.default {
+  background: var(--color-surface-2);
+  color: var(--color-text-secondary);
+  border-color: var(--color-border);
+}
+
+.navy {
+  background: rgba(13, 27, 42, 0.08);
+  color: var(--color-navy);
+  border-color: rgba(13, 27, 42, 0.15);
+}
+
+.gold {
+  background: var(--color-gold-muted);
+  color: var(--color-gold);
+  border-color: rgba(154, 127, 60, 0.25);
+}
+
+.success {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border-color: rgba(26, 127, 75, 0.2);
+}
+
+.error {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+  border-color: rgba(192, 57, 43, 0.2);
+}
+
+.warning {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+  border-color: rgba(183, 134, 11, 0.2);
+}
+
+.info {
+  background: var(--color-info-bg);
+  color: var(--color-info);
+  border-color: rgba(26, 86, 160, 0.2);
+}
+
+/* ── Dot ─────────────────────────────────────────────────────── */
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
