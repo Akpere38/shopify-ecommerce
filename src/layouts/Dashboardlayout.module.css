@@ -9,7 +9,6 @@
 .sidebar {
   width: 240px;
   min-height: 100vh;
-  background: ;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
