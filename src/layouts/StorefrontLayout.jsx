@@ -86,7 +86,7 @@ export default function StorefrontLayout() {
         <div className={styles.footerInner}>
           <p className={styles.footerStore}>{store?.name}</p>
           <p className={styles.footerPowered}>
-            Powered by <strong>ShopFlow</strong>
+            Powered by <strong>Dart Digital Store Front</strong>
           </p>
         </div>
       </footer>

@@ -127,7 +127,7 @@ export default function CreateStorePage() {
                   error={errors.slug}
                   required
                   leftIcon={<Globe size={15} />}
-                  helper={!errors.slug ? `shopflow.com/store/${form.slug || 'your-store'}` : undefined}
+                  helper={!errors.slug ? `dart_digital_store_front.com/store/${form.slug || 'your-store'}` : undefined}
                 />
                 {form.slug && (
                   <div className={styles.slugIndicator}>{slugIndicator()}</div>
@@ -184,7 +184,7 @@ export default function CreateStorePage() {
             )}
             <div className={styles.previewUrl}>
               <Globe size={12} />
-              <span>shopflow.com/store/{form.slug || 'your-store'}</span>
+              <span>dart_digital_store_front.com/store/{form.slug || 'your-store'}</span>
             </div>
           </div>
 

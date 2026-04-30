@@ -76,7 +76,7 @@ export default function StoreOverviewPage() {
         <QuickActionCard
           icon={<ExternalLink size={20} />}
           title="Public Storefront"
-          description={`shopflow.com/store/${activeStore.slug}`}
+          description={`dart_digital_store_front.com/store/${activeStore.slug}`}
           action="Open in new tab"
           href={ROUTES.STOREFRONT(activeStore.slug)}
           accent="success"
