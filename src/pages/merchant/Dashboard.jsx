@@ -1,7 +1,7 @@
 import { useStoreContext } from "@/context/StoreContext";
 import { Link } from "react-router-dom";
 import { ROUTES } from "@/utils/constants";
-import styles from "./DashboardHomePage.module.css";
+import styles from "./Dashboardhomepage.module.css";
 
 export default function DashboardHomePage() {
   const { stores } = useStoreContext();
