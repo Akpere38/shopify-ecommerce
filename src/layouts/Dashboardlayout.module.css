@@ -9,7 +9,7 @@
 .sidebar {
   width: 240px;
   min-height: 100vh;
-  background: var(--color-sidebar-bg);
+  background: ;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -44,8 +44,8 @@
 .logoMark {
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
-  color: var(--color-ink);
+  background: var(--color-brand-accent);
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 14px;
@@ -121,8 +121,8 @@
 }
 
 .navItemActive {
-  background: rgba(196, 168, 79, 0.15) !important;
-  color: var(--color-gold-bright) !important;
+  background: rgba(255, 92, 26, 0.15) !important;
+  color: var(--color-brand-accent) !important;
 }
 
 .navItemText {
@@ -148,9 +148,9 @@
   color: var(--color-sidebar-muted);
 }
 .navItemNew:hover {
-  border-color: var(--color-gold-bright);
-  color: var(--color-gold-bright);
-  background: rgba(196, 168, 79, 0.08);
+  border-color: var(--color-brand-accent);
+  color: var(--color-brand-accent);
+  background: rgba(255, 92, 26, 0.05);
 }
 
 .navItemExternal {
@@ -172,8 +172,8 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
-  color: var(--color-ink);
+  background: var(--color-brand-accent);
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 12px;
@@ -261,8 +261,8 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
-  color: var(--color-ink);
+  background: var(--color-brand-accent);
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 11px;
