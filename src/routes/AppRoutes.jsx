@@ -12,6 +12,7 @@ import Dashboard from "../pages/merchant/Dashboard";
 import CreateStore from "../pages/merchant/CreateStore";
 import StoreDetail from "../pages/merchant/StoreDetail";
 import AddProduct from "../pages/merchant/CreateProductPage";
+import StoreProducts from "../pages/merchant/ProductListPage"
 
 // Storefront Pages
 import StorePage from "../pages/storefront/StorePage";
@@ -45,6 +46,7 @@ const AppRoutes = () => {
         <Route path="stores/create" element={<CreateStore />} />
         <Route path="stores/:storeId" element={<StoreDetail />} />
         <Route path="stores/:storeId/products/new" element={<AddProduct />} />
+        <Route path="stores/:storeId/products" element={<StoreProducts />} />
       </Route>
 
 {/* ================= STOREFRONT (PUBLIC) ================= */}
